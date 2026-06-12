@@ -1,0 +1,826 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Abdul Ghani T — Sales & Admissions Leadership Portfolio</title> <!-- Google Fonts --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> <style> /* ================================ GLOBAL THEME VARIABLES ================================= */ :root { --navy: #071426; --navy-2: #0b1f3a; --navy-3: #102b4d; --blue-soft: #5da9e9; --gold: #c9a24e; --gold-soft: #ead18a; --white: #ffffff; --soft-white: #f5f7fb; --muted: #b8c3d6; --card: rgba(255, 255, 255, 0.065); --card-strong: rgba(255, 255, 255, 0.095); --border: rgba(255, 255, 255, 0.12); --gold-border: rgba(201, 162, 78, 0.45); --shadow: 0 24px 70px rgba(0, 0, 0, 0.35); --radius-lg: 28px; --radius-md: 20px; --radius-sm: 14px; --container: 1180px; } /* ================================ BASE RESET ================================= */ * { box-sizing: border-box; margin: 0; padding: 0; } html { scroll-behavior: smooth; } body { font-family: "Inter", sans-serif; background: radial-gradient(circle at 15% 8%, rgba(93, 169, 233, 0.20), transparent 32%), radial-gradient(circle at 85% 18%, rgba(201, 162, 78, 0.13), transparent 30%), linear-gradient(135deg, #061121 0%, #081a31 45%, #071426 100%); color: var(--soft-white); line-height: 1.65; overflow-x: hidden; } body::before { content: ""; position: fixed; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 48px 48px; mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent 75%); z-index: -2; } body::after { content: ""; position: fixed; inset: 0; pointer-events: none; background: linear-gradient(120deg, transparent 0%, transparent 45%, rgba(201,162,78,0.10) 45.2%, transparent 45.5%, transparent 100%), linear-gradient(145deg, transparent 0%, transparent 68%, rgba(93,169,233,0.08) 68.3%, transparent 68.6%, transparent 100%); z-index: -1; } a { color: inherit; text-decoration: none; } ul { list-style: none; } .container { width: min(var(--container), calc(100% - 40px)); margin: 0 auto; } .section { padding: 96px 0; position: relative; } .section-small { padding: 72px 0; } .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--gold-soft); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px; } .eyebrow::before { content: ""; width: 34px; height: 2px; background: linear-gradient(90deg, var(--gold), transparent); border-radius: 999px; } .section-title { font-family: "Playfair Display", serif; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.12; letter-spacing: -0.03em; margin-bottom: 18px; } .section-lead { color: var(--muted); max-width: 760px; font-size: 1.04rem; } .gold { color: var(--gold-soft); } .divider { height: 1px; width: 100%; background: linear-gradient(90deg, transparent, rgba(201, 162, 78, 0.55), transparent); margin: 26px 0; } /* ================================ NAVIGATION ================================= */ .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(18px); background: rgba(7, 20, 38, 0.78); border-bottom: 1px solid var(--border); } .nav-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 28px; } .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: -0.02em; } .brand-mark { width: 38px; height: 38px; border-radius: 14px; display: grid; place-items: center; color: var(--navy); background: linear-gradient(135deg, var(--gold-soft), var(--gold)); box-shadow: 0 10px 28px rgba(201, 162, 78, 0.25); } .nav-links { display: flex; align-items: center; gap: 22px; color: var(--muted); font-size: 0.92rem; font-weight: 600; } .nav-links a { transition: 0.25s ease; } .nav-links a:hover { color: var(--white); } /* ================================ BUTTONS ================================= */ .btn-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; } .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 20px; border-radius: 999px; font-weight: 800; font-size: 0.95rem; transition: 0.25s ease; border: 1px solid transparent; } .btn-primary { background: linear-gradient(135deg, var(--gold-soft), var(--gold)); color: #081426; box-shadow: 0 18px 40px rgba(201, 162, 78, 0.18); } .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 22px 48px rgba(201, 162, 78, 0.28); } .btn-secondary { border-color: var(--border); background: rgba(255,255,255,0.055); color: var(--white); } .btn-secondary:hover { border-color: var(--gold-border); background: rgba(255,255,255,0.09); transform: translateY(-2px); } /* ================================ HERO SECTION ================================= */ .hero { padding: 110px 0 86px; position: relative; } .hero-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 54px; align-items: center; } .hero-card { position: relative; padding: clamp(34px, 5vw, 58px); border: 1px solid var(--border); border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035)), radial-gradient(circle at top right, rgba(201,162,78,0.14), transparent 36%); box-shadow: var(--shadow); overflow: hidden; animation: fadeUp 0.9s ease both; } .hero-card::before { content: ""; position: absolute; width: 220px; height: 220px; border: 1px solid rgba(201,162,78,0.18); border-radius: 50%; right: -80px; top: -80px; } .hero-card::after { content: ""; position: absolute; width: 160px; height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent); right: 44px; top: 44px; opacity: 0.75; } .hero h1 { font-family: "Playfair Display", serif; font-size: clamp(3rem, 7vw, 6.2rem); line-height: 0.96; letter-spacing: -0.055em; margin-bottom: 24px; } .hero-subtitle { color: var(--gold-soft); font-weight: 800; font-size: clamp(1.05rem, 2vw, 1.35rem); max-width: 780px; margin-bottom: 20px; } .hero-summary { color: var(--muted); max-width: 800px; font-size: 1.04rem; } .hero-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; } .pill { display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,0.055); color: var(--soft-white); font-size: 0.88rem; font-weight: 700; } .pill-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--gold); box-shadow: 0 0 0 5px rgba(201,162,78,0.12); } .hero-side { display: grid; gap: 18px; animation: fadeUp 0.9s ease 0.12s both; } .profile-panel { border: 1px solid var(--gold-border); border-radius: var(--radius-lg); padding: 28px; background: linear-gradient(160deg, rgba(201,162,78,0.12), rgba(255,255,255,0.04)), rgba(255,255,255,0.045); box-shadow: var(--shadow); position: relative; overflow: hidden; } .profile-panel::before { content: ""; position: absolute; inset: auto -40px -60px auto; width: 180px; height: 180px; border-radius: 50%; background: rgba(93,169,233,0.10); } .profile-panel h3 { font-size: 1rem; color: var(--gold-soft); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; } .profile-panel p { color: var(--muted); font-size: 0.98rem; } .quick-list { display: grid; gap: 12px; margin-top: 22px; } .quick-item { display: flex; align-items: flex-start; gap: 12px; padding: 14px; border-radius: 16px; background: rgba(255,255,255,0.055); border: 1px solid var(--border); } .quick-icon { width: 34px; height: 34px; border-radius: 12px; display: grid; place-items: center; flex: 0 0 auto; background: rgba(201,162,78,0.13); color: var(--gold-soft); font-weight: 900; } .quick-item strong { display: block; color: var(--white); font-size: 0.95rem; line-height: 1.35; } .quick-item span { display: block; color: var(--muted); font-size: 0.84rem; margin-top: 2px; } /* ================================ SNAPSHOT CARDS ================================= */ .snapshot-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-top: 38px; } .snapshot-card { padding: 22px 18px; min-height: 144px; border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--card); box-shadow: 0 18px 42px rgba(0,0,0,0.18); transition: 0.25s ease; } .snapshot-card:hover { transform: translateY(-5px); border-color: var(--gold-border); background: var(--card-strong); } .snapshot-number { font-family: "Playfair Display", serif; font-size: 2rem; color: var(--gold-soft); line-height: 1; margin-bottom: 10px; } .snapshot-card h3 { font-size: 0.98rem; line-height: 1.35; color: var(--white); } .snapshot-card p { margin-top: 8px; color: var(--muted); font-size: 0.84rem; } /* ================================ TIMELINE ================================= */ .timeline { position: relative; margin-top: 46px; display: grid; gap: 18px; } .timeline::before { content: ""; position: absolute; left: 24px; top: 26px; bottom: 26px; width: 2px; background: linear-gradient(to bottom, var(--gold), rgba(201,162,78,0.1)); } .timeline-item { display: grid; grid-template-columns: 48px 1fr; gap: 22px; align-items: stretch; position: relative; } .timeline-node { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; color: var(--navy); background: linear-gradient(135deg, var(--gold-soft), var(--gold)); font-weight: 900; z-index: 2; box-shadow: 0 0 0 8px rgba(201,162,78,0.12); } .timeline-card { padding: 22px 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.035)); transition: 0.25s ease; } .timeline-card:hover { border-color: var(--gold-border); transform: translateX(4px); } .timeline-card h3 { font-size: 1.1rem; color: var(--white); margin-bottom: 6px; } .timeline-card p { color: var(--gold-soft); font-weight: 700; font-size: 0.92rem; } /* ================================ ABOUT ================================= */ .about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 34px; align-items: stretch; margin-top: 40px; } .about-card, .highlight-card { border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--card); padding: 32px; box-shadow: 0 18px 48px rgba(0,0,0,0.20); } .about-card p { color: var(--muted); margin-bottom: 16px; } .about-card p:last-child { margin-bottom: 0; } .highlight-list { display: grid; gap: 16px; } .highlight-row { display: grid; grid-template-columns: 38px 1fr; gap: 14px; align-items: start; } .highlight-row .num { width: 38px; height: 38px; border-radius: 14px; display: grid; place-items: center; color: var(--navy); background: linear-gradient(135deg, var(--gold-soft), var(--gold)); font-weight: 900; } .highlight-row h3 { font-size: 1rem; margin-bottom: 4px; } .highlight-row p { color: var(--muted); font-size: 0.92rem; } /* ================================ CASE STUDIES ================================= */ .case-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 42px; } .case-card { padding: 28px; border-radius: var(--radius-lg); border: 1px solid var(--border); background: radial-gradient(circle at top right, rgba(201,162,78,0.12), transparent 34%), var(--card); box-shadow: 0 18px 48px rgba(0,0,0,0.20); transition: 0.25s ease; } .case-card:hover { transform: translateY(-6px); border-color: var(--gold-border); background: var(--card-strong); } .case-tag { display: inline-flex; color: var(--gold-soft); border: 1px solid var(--gold-border); border-radius: 999px; padding: 6px 10px; font-size: 0.75rem; font-weight: 800; margin-bottom: 18px; } .case-card h3 { font-size: 1.2rem; line-height: 1.35; margin-bottom: 12px; } .case-card p { color: var(--muted); font-size: 0.93rem; } .case-full { margin-top: 34px; display: grid; gap: 26px; } .case-detail { border: 1px solid var(--border); border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035)); box-shadow: 0 18px 52px rgba(0,0,0,0.22); overflow: hidden; } .case-detail-header { padding: 30px 32px; background: linear-gradient(135deg, rgba(201,162,78,0.12), rgba(93,169,233,0.06)); border-bottom: 1px solid var(--border); } .case-detail-header span { color: var(--gold-soft); font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.76rem; } .case-detail-header h3 { font-size: clamp(1.4rem, 2.2vw, 2rem); margin-top: 8px; } .case-detail-body { padding: 32px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; } .case-block { padding: 22px; border-radius: 18px; border: 1px solid var(--border); background: rgba(255,255,255,0.04); } .case-block h4 { color: var(--gold-soft); font-size: 0.92rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.08em; } .case-block p, .case-block li { color: var(--muted); font-size: 0.94rem; } .case-block ul { display: grid; gap: 8px; } .case-block li { position: relative; padding-left: 18px; } .case-block li::before { content: "•"; color: var(--gold-soft); position: absolute; left: 0; } /* ================================ SKILLS ================================= */ .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 42px; } .skill-box { border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--card); padding: 28px; transition: 0.25s ease; } .skill-box:hover { border-color: var(--gold-border); transform: translateY(-4px); } .skill-box h3 { font-size: 1.14rem; margin-bottom: 18px; color: var(--white); } .skill-tags { display: flex; flex-wrap: wrap; gap: 10px; } .skill-tag { padding: 8px 11px; border: 1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,0.055); color: var(--muted); font-size: 0.86rem; font-weight: 700; } /* ================================ RECOGNITION & CERTIFICATIONS ================================= */ .recognition-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 24px; margin-top: 42px; } .recognition-panel, .cert-panel { border: 1px solid var(--border); border-radius: var(--radius-lg); background: radial-gradient(circle at top right, rgba(201,162,78,0.12), transparent 32%), var(--card); padding: 30px; box-shadow: 0 18px 52px rgba(0,0,0,0.20); } .recognition-list { display: grid; gap: 14px; margin-top: 20px; } .recognition-list li { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; color: var(--muted); } .check { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: rgba(201,162,78,0.13); color: var(--gold-soft); font-weight: 900; } .cert-list { display: grid; gap: 18px; margin-top: 20px; } .cert-card { padding: 22px; border-radius: 18px; border: 1px solid var(--border); background: rgba(255,255,255,0.045); } .cert-card h3 { font-size: 1.05rem; line-height: 1.4; margin-bottom: 8px; } .cert-meta { color: var(--gold-soft); font-size: 0.88rem; font-weight: 800; margin-bottom: 10px; } .cert-card p { color: var(--muted); font-size: 0.93rem; } /* ================================ CONTACT ================================= */ .contact-card { margin-top: 40px; border: 1px solid var(--gold-border); border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(201,162,78,0.12), rgba(255,255,255,0.045)); box-shadow: var(--shadow); padding: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; } .contact-item { padding: 20px; border: 1px solid var(--border); border-radius: 18px; background: rgba(255,255,255,0.045); } .contact-label { color: var(--gold-soft); font-size: 0.75rem; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; } .contact-value { color: var(--white); font-weight: 700; overflow-wrap: anywhere; } /* ================================ FOOTER ================================= */ .footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted); text-align: center; font-size: 0.92rem; } /* ================================ ANIMATIONS ================================= */ @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } } .reveal { animation: fadeUp 0.75s ease both; } /* ================================ RESPONSIVE DESIGN ================================= */ @media (max-width: 1024px) { .hero-grid, .about-grid, .recognition-grid { grid-template-columns: 1fr; } .snapshot-grid { grid-template-columns: repeat(3, 1fr); } .case-card-grid { grid-template-columns: 1fr; } .hero-side { grid-template-columns: 1fr; } } @media (max-width: 760px) { .container { width: min(100% - 28px, var(--container)); } .nav-inner { align-items: flex-start; flex-direction: column; padding: 16px 0; } .nav-links { flex-wrap: wrap; gap: 12px 18px; font-size: 0.84rem; } .hero { padding: 72px 0 54px; } .hero-card, .about-card, .highlight-card, .recognition-panel, .cert-panel, .contact-card { padding: 24px; } .section { padding: 68px 0; } .snapshot-grid { grid-template-columns: repeat(2, 1fr); } .case-detail-body, .skills-grid, .contact-card { grid-template-columns: 1fr; } .case-detail-header, .case-detail-body { padding: 24px; } .timeline-card { padding: 20px; } } @media (max-width: 480px) { .snapshot-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 3rem; } .btn { width: 100%; } .timeline-item { grid-template-columns: 42px 1fr; gap: 16px; } .timeline-node { width: 42px; height: 42px; } .timeline::before { left: 21px; } } 
+/* ================================
+   SAMPLE KPI DASHBOARD
+================================= */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.dashboard-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: radial-gradient(circle at top right, rgba(201,162,78,0.14), transparent 36%), var(--card);
+  padding: 24px;
+  box-shadow: 0 18px 44px rgba(0,0,0,0.20);
+}
+
+.dashboard-label {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.dashboard-value {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  color: var(--gold-soft);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.pipeline-demo {
+  margin-top: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035));
+  padding: 28px;
+}
+
+.pipeline-row {
+  display: grid;
+  grid-template-columns: 190px 1fr 80px;
+  gap: 16px;
+  align-items: center;
+  margin: 14px 0;
+}
+
+.pipeline-name {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 0.94rem;
+}
+
+.pipeline-bar {
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.pipeline-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold-soft), var(--gold));
+}
+
+.pipeline-value {
+  color: var(--gold-soft);
+  font-weight: 900;
+  text-align: right;
+}
+
+.note-box {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  border: 1px solid var(--gold-border);
+  background: rgba(201,162,78,0.08);
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .pipeline-row { grid-template-columns: 1fr; gap: 8px; }
+  .pipeline-value { text-align: left; }
+}
+
+</style> </head> <body> <!-- ================================ NAVIGATION ================================= --> <header class="nav"> <div class="container nav-inner"> <a href="#home" class="brand" aria-label="Abdul Ghani T Portfolio Home"> <span class="brand-mark">AG</span> <span>Abdul Ghani T</span> </a>
+  <nav class="nav-links" aria-label="Main Navigation">
+    <a href="#journey">Journey</a>
+    <a href="#about">About</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#skills">Skills</a>
+    <a href="#recognition">Recognition</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+</header> <!-- ================================ HERO SECTION ================================= --> <main id="home" class="hero"> <div class="container hero-grid"> <section class="hero-card"> <div class="eyebrow">Sales & Admissions Leadership Portfolio</div> <h1>Abdul<br>Ghani T</h1>
+    <p class="hero-subtitle">
+      Assistant Manager | Higher Education Sales | Team Leadership | CRM-Based Revenue Operations
+    </p>
+
+    <p class="hero-summary">
+      Sales Growth Professional with experience across admissions counselling, lead follow-up discipline,
+      team support, CRM-based pipeline tracking, and branch sales execution in the higher education
+      and upskilling sector.
+    </p>
+
+    <div class="hero-meta">
+      <span class="pill"><span class="pill-dot"></span> Assistant Manager at Jaro Education</span>
+      <span class="pill"><span class="pill-dot"></span> Kochi, Kerala, India</span>
+      <span class="pill"><span class="pill-dot"></span> LeadSquared CRM</span>
+    </div>
+
+    <div class="btn-row">
+      <a href="#case-studies" class="btn btn-primary">View Case Studies →</a>
+      <a href="#contact" class="btn btn-secondary">Contact</a>
+      <a href="Abdul_Ghani_T_Resume_With_Core_Skills.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Download Resume</a>
+    </div>
+  </section>
+
+  <aside class="hero-side">
+    <div class="profile-panel">
+      <h3>Professional Positioning</h3>
+      <p>
+        Sales Growth Professional | Admissions & Revenue Operations | Team Leadership | CRM-Based Sales Execution | Branch Sales Operations
+      </p>
+
+      <div class="quick-list">
+        <div class="quick-item">
+          <span class="quick-icon">01</span>
+          <div>
+            <strong>Admissions & Revenue Operations</strong>
+            <span>Lead handling, counselling, follow-ups, and conversion support.</span>
+          </div>
+        </div>
+
+        <div class="quick-item">
+          <span class="quick-icon">02</span>
+          <div>
+            <strong>Team Support & Sales Execution</strong>
+            <span>Guiding team members through daily sales and counselling workflows.</span>
+          </div>
+        </div>
+
+        <div class="quick-item">
+          <span class="quick-icon">03</span>
+          <div>
+            <strong>CRM-Based Sales Discipline</strong>
+            <span>LeadSquared usage for tracking, pipeline discipline, and follow-up management.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+</main> <!-- ================================ CAREER SNAPSHOT ================================= --> <section class="section-small" id="snapshot"> <div class="container reveal"> <div class="eyebrow">Career Snapshot</div> <h2 class="section-title">A focused sales leadership profile built around execution, counselling, and CRM discipline.</h2> <p class="section-lead"> Snapshot of Abdul’s sales journey, team support exposure, CRM usage, and professional development milestones. </p>
+  <div class="snapshot-grid">
+    <article class="snapshot-card">
+      <div class="snapshot-number">3+</div>
+      <h3>Years Sales Experience</h3>
+      <p>Higher education sales and admissions counselling exposure.</p>
+    </article>
+
+    <article class="snapshot-card">
+      <div class="snapshot-number">10–14</div>
+      <h3>Team Members Supported</h3>
+      <p>Supported team execution, counselling process, and follow-up discipline.</p>
+    </article>
+
+    <article class="snapshot-card">
+      <div class="snapshot-number">CRM</div>
+      <h3>LeadSquared CRM</h3>
+      <p>Lead tracking, pipeline updates, follow-ups, and conversion support.</p>
+    </article>
+
+    <article class="snapshot-card">
+      <div class="snapshot-number">3x</div>
+      <h3>R&R Mumbai</h3>
+      <p>Rewards & Recognition event participation.</p>
+    </article>
+
+    <article class="snapshot-card">
+      <div class="snapshot-number">2x</div>
+      <h3>MDP</h3>
+      <p>Management Development Programme participation.</p>
+    </article>
+
+    <article class="snapshot-card">
+      <div class="snapshot-number">AM</div>
+      <h3>Assistant Manager</h3>
+      <p>Current role with sales execution and team-support responsibilities.</p>
+    </article>
+  </div>
+</div>
+</section> <!-- ================================ CAREER GROWTH TIMELINE ================================= --> <section class="section" id="journey"> <div class="container reveal"> <div class="eyebrow">Career Growth Timeline</div> <h2 class="section-title">From Business Development Associate to Assistant Manager.</h2> <p class="section-lead"> A progressive journey shaped by sales ownership, admissions counselling, CRM discipline, team support, and leadership development. </p>
+  <div class="timeline">
+    <article class="timeline-item">
+      <div class="timeline-node">1</div>
+      <div class="timeline-card">
+        <h3>Business Development Associate</h3>
+        <p>Jul 2023 – Mar 2025</p>
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-node">2</div>
+      <div class="timeline-card">
+        <h3>Proposed Team Lead</h3>
+        <p>Apr 2025 – Aug 2025</p>
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-node">3</div>
+      <div class="timeline-card">
+        <h3>Proposed Assistant Manager</h3>
+        <p>Sep 2025 – Mar 2026</p>
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-node">4</div>
+      <div class="timeline-card">
+        <h3>Assistant Manager</h3>
+        <p>Apr 2026 – Present</p>
+      </div>
+    </article>
+  </div>
+</div>
+</section> <!-- ================================ ABOUT SECTION ================================= --> <section class="section" id="about"> <div class="container reveal"> <div class="eyebrow">About</div> <h2 class="section-title">Sales execution, counselling discipline, and team-focused leadership.</h2>
+  <div class="about-grid">
+    <article class="about-card">
+      <p>
+        Abdul Ghani T is a sales and admissions professional currently working as an Assistant Manager
+        at Jaro Education. His experience is centered on higher education sales, student and parent
+        counselling, CRM-based follow-up management, lead nurturing, and admission closure support.
+      </p>
+
+      <p>
+        His growth from Business Development Associate to Assistant Manager reflects consistent exposure
+        to individual sales execution as well as team-level support responsibilities. He has worked across
+        call-based counselling, walk-ins, and virtual counselling, while using LeadSquared CRM to maintain
+        follow-up discipline and pipeline visibility.
+      </p>
+
+      <p>
+        His leadership development includes Rewards & Recognition participation, Management Development
+        Programmes, and learning exposure associated with IIM Kozhikode across sales, leadership, growth,
+        high impact leadership, and execution excellence.
+      </p>
+    </article>
+
+    <aside class="highlight-card">
+      <div class="highlight-list">
+        <div class="highlight-row">
+          <span class="num">01</span>
+          <div>
+            <h3>Sales & Admissions Counselling</h3>
+            <p>Experienced in guiding prospects through program fitment, objections, payment support, and admission closure steps.</p>
+          </div>
+        </div>
+
+        <div class="highlight-row">
+          <span class="num">02</span>
+          <div>
+            <h3>CRM-Based Execution</h3>
+            <p>Uses LeadSquared CRM for lead tracking, follow-up updates, pipeline discipline, and conversion support.</p>
+          </div>
+        </div>
+
+        <div class="highlight-row">
+          <span class="num">03</span>
+          <div>
+            <h3>Team Support</h3>
+            <p>Supported and guided 10–14 team members across counselling process, follow-ups, objection handling, and daily execution.</p>
+          </div>
+        </div>
+
+        <div class="highlight-row">
+          <span class="num">04</span>
+          <div>
+            <h3>Leadership Development</h3>
+            <p>Participated in professional development programmes focused on sales, leadership, growth, and execution excellence.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+</section> <!-- ================================ CASE STUDIES OVERVIEW + DETAILS ================================= --> <section class="section" id="case-studies"> <div class="container reveal"> <div class="eyebrow">Case Studies</div> <h2 class="section-title">Recruiter-friendly sales leadership case studies.</h2> <p class="section-lead"> These case studies are written to show practical sales execution, counselling, CRM usage, team coordination, and branch sales support without overstating results. </p>
+  <div class="case-card-grid">
+    <a href="#case-1" class="case-card">
+      <span class="case-tag">Case Study 01</span>
+      <h3>Kochi Branch Sales Execution Case Study</h3>
+      <p>Branch-level execution support, lead handling, CRM discipline, counselling support, and daily sales coordination.</p>
+    </a>
+
+    <a href="#case-2" class="case-card">
+      <span class="case-tag">Case Study 02</span>
+      <h3>Team Training & Counselling Process Improvement</h3>
+      <p>Supporting team members with counselling flow, objections, CRM updates, follow-ups, and payment coordination.</p>
+    </a>
+
+    <a href="#case-3" class="case-card">
+      <span class="case-tag">Case Study 03</span>
+      <h3>Lead-to-Admission Funnel Management Using LeadSquared CRM</h3>
+      <p>Lead received to qualification, counselling, fitment, objection handling, admission closure, and post-admission follow-up.</p>
+    </a>
+  </div>
+
+  <div class="case-full">
+    <!-- CASE STUDY 1 -->
+    <article class="case-detail" id="case-1">
+      <div class="case-detail-header">
+        <span>Case Study 01</span>
+        <h3>Kochi Branch Sales Execution Case Study</h3>
+      </div>
+
+      <div class="case-detail-body">
+        <div class="case-block">
+          <h4>Overview</h4>
+          <p>
+            Supported branch-level sales execution by coordinating lead handling, counselling support,
+            CRM updates, daily follow-up discipline, and payment or loan process support.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Business Context</h4>
+          <p>
+            Admissions sales requires consistent lead attention, timely follow-ups, clear counselling,
+            program fitment discussion, and coordination across sales and support steps.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Objective</h4>
+          <p>
+            Support structured daily execution so leads are tracked properly, counselling conversations
+            remain clear, and admission-related next steps are followed through professionally.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>My Role</h4>
+          <p>
+            Assisted with individual sales execution, team-level coordination, CRM discipline, counselling
+            support, follow-up tracking, and branch sales execution.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Key Challenges</h4>
+          <ul>
+            <li>Maintaining follow-up discipline across multiple leads.</li>
+            <li>Ensuring counselling conversations matched prospect needs.</li>
+            <li>Supporting payment and education loan process clarity.</li>
+            <li>Keeping CRM updates consistent for visibility and next actions.</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Actions Taken</h4>
+          <ul>
+            <li>Used LeadSquared CRM to track lead stages, follow-ups, and next actions.</li>
+            <li>Supported calls, walk-ins, and virtual counselling discussions.</li>
+            <li>Coordinated with team members for daily sales activity and follow-up discipline.</li>
+            <li>Assisted prospects with payment and loan-related process understanding.</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Outcome</h4>
+          <p>
+            Improved execution discipline by helping maintain structured lead handling, better counselling
+            continuity, CRM visibility, and clearer admission-support workflow.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Skills Demonstrated</h4>
+          <ul>
+            <li>Branch sales execution support</li>
+            <li>Admissions counselling</li>
+            <li>CRM-based pipeline management</li>
+            <li>Follow-up tracking</li>
+            <li>Team coordination</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Key Learning</h4>
+          <p>
+            Branch sales execution works best when counselling, follow-up tracking, CRM updates,
+            and payment process coordination are handled with daily discipline.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE STUDY 2 -->
+    <article class="case-detail" id="case-2">
+      <div class="case-detail-header">
+        <span>Case Study 02</span>
+        <h3>Team Training & Counselling Process Improvement</h3>
+      </div>
+
+      <div class="case-detail-body">
+        <div class="case-block">
+          <h4>Overview</h4>
+          <p>
+            Supported 10–14 team members by helping them improve counselling flow, CRM updates,
+            follow-up discipline, objection handling, and payment coordination.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Business Context</h4>
+          <p>
+            Admissions sales teams need consistent counselling quality, timely follow-up habits,
+            and clear CRM records to manage prospects professionally.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Objective</h4>
+          <p>
+            Help team members follow a structured counselling and follow-up approach while maintaining
+            clarity across lead stages, prospect objections, and admission next steps.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>My Role</h4>
+          <p>
+            Guided team members on counselling process, CRM update discipline, objection handling,
+            payment coordination, education loan process guidance, and daily performance support.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Key Challenges</h4>
+          <ul>
+            <li>Different counselling styles across team members.</li>
+            <li>Incomplete or delayed CRM updates affecting lead visibility.</li>
+            <li>Prospect objections around fitment, affordability, and decision timing.</li>
+            <li>Need for clear payment and education loan process communication.</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Actions Taken</h4>
+          <ul>
+            <li>Helped team members structure counselling conversations around prospect needs.</li>
+            <li>Encouraged timely LeadSquared CRM updates and follow-up tracking.</li>
+            <li>Supported objection-handling conversations with practical examples.</li>
+            <li>Assisted team members in explaining payment coordination and loan process steps clearly.</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Outcome</h4>
+          <p>
+            Created better counselling consistency, clearer follow-up ownership, improved CRM discipline,
+            and smoother support for prospects moving through admission-related steps.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Skills Demonstrated</h4>
+          <ul>
+            <li>Team leadership</li>
+            <li>Coaching and support</li>
+            <li>Admissions counselling process</li>
+            <li>Objection handling</li>
+            <li>CRM discipline</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Key Learning</h4>
+          <p>
+            Team performance improves when counselling quality, CRM updates, objection handling,
+            and follow-up discipline are treated as one connected process.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE STUDY 3 -->
+    <article class="case-detail" id="case-3">
+      <div class="case-detail-header">
+        <span>Case Study 03</span>
+        <h3>Lead-to-Admission Funnel Management Using LeadSquared CRM</h3>
+      </div>
+
+      <div class="case-detail-body">
+        <div class="case-block">
+          <h4>Overview</h4>
+          <p>
+            Managed and supported a structured lead-to-admission flow using LeadSquared CRM,
+            covering qualification, counselling, program fitment, objection handling, payment support,
+            admission closure, and post-admission follow-up.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Business Context</h4>
+          <p>
+            Higher education admissions involve multiple touchpoints across calls, walk-ins,
+            and virtual counselling. Each lead requires timely communication and clear stage tracking.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Objective</h4>
+          <p>
+            Ensure leads move through a clear sales funnel with proper qualification, counselling,
+            follow-ups, and admission-support actions tracked in CRM.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Funnel Flow</h4>
+          <p>
+            Lead Received → Qualification → Counselling → Program Fitment → Objection Handling → Payment / Loan Support → Admission Closure → Post-Admission Follow-up
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>My Role</h4>
+          <p>
+            Used LeadSquared CRM to support lead tracking, follow-up planning, pipeline updates,
+            counselling continuity, and admission process coordination.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Key Challenges</h4>
+          <ul>
+            <li>Managing lead follow-ups across different counselling channels.</li>
+            <li>Identifying correct program fitment based on prospect goals.</li>
+            <li>Handling concerns related to timing, affordability, and decision confidence.</li>
+            <li>Keeping CRM pipeline updates consistent and actionable.</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Actions Taken</h4>
+          <ul>
+            <li>Tracked lead movement from received stage to qualification and counselling.</li>
+            <li>Supported program fitment discussions through calls, walk-ins, and virtual counselling.</li>
+            <li>Handled objections through structured communication and follow-up discipline.</li>
+            <li>Assisted with payment or education loan process support before admission closure.</li>
+            <li>Maintained post-admission follow-up for continuity and support.</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Outcome</h4>
+          <p>
+            Helped maintain a more structured admission funnel with clearer lead visibility,
+            timely follow-ups, stronger counselling continuity, and better process ownership.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Skills Demonstrated</h4>
+          <ul>
+            <li>Lead qualification</li>
+            <li>LeadSquared CRM usage</li>
+            <li>Pipeline management</li>
+            <li>Sales follow-up tracking</li>
+            <li>Admissions closure support</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Key Learning</h4>
+          <p>
+            CRM discipline is most valuable when it supports real counselling action, follow-up clarity,
+            and a better experience for the prospect throughout the admission journey.
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</section> 
+<!-- ================================
+     SAMPLE KPI DASHBOARD
+================================= -->
+<section class="section" id="dashboard">
+  <div class="container reveal">
+    <div class="eyebrow">Sample Sales Operations Dashboard</div>
+    <h2 class="section-title">Anonymized KPI view for CRM-based admissions sales execution.</h2>
+    <p class="section-lead">
+      This dashboard is included as a portfolio demonstration to show how Abdul understands sales pipeline visibility,
+      follow-up discipline, counselling movement, and payment-stage tracking. The numbers below are illustrative sample
+      data only and are not real company revenue, admission, CRM, or branch performance figures.
+    </p>
+
+    <div class="dashboard-grid">
+      <article class="dashboard-card">
+        <div class="dashboard-label">Sample Leads Received</div>
+        <div class="dashboard-value">100%</div>
+        <p>Baseline view for tracking incoming prospects across calls, walk-ins, and virtual channels.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <div class="dashboard-label">Qualified Leads</div>
+        <div class="dashboard-value">68%</div>
+        <p>Illustrative qualified pipeline after interest, eligibility, requirement, and fitment checks.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <div class="dashboard-label">Counselling Completed</div>
+        <div class="dashboard-value">52%</div>
+        <p>Sample movement from qualified prospects into detailed student or parent counselling conversations.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <div class="dashboard-label">Payment / Loan Stage</div>
+        <div class="dashboard-value">24%</div>
+        <p>Illustrative view of prospects requiring fee discussion, payment coordination, or education loan support.</p>
+      </article>
+    </div>
+
+    <div class="pipeline-demo">
+      <h3 style="margin-bottom: 16px;">Sample Lead-to-Admission Funnel</h3>
+
+      <div class="pipeline-row">
+        <div class="pipeline-name">Lead Received</div>
+        <div class="pipeline-bar"><div class="pipeline-fill" style="width:100%"></div></div>
+        <div class="pipeline-value">100%</div>
+      </div>
+
+      <div class="pipeline-row">
+        <div class="pipeline-name">Qualified</div>
+        <div class="pipeline-bar"><div class="pipeline-fill" style="width:68%"></div></div>
+        <div class="pipeline-value">68%</div>
+      </div>
+
+      <div class="pipeline-row">
+        <div class="pipeline-name">Counselling Done</div>
+        <div class="pipeline-bar"><div class="pipeline-fill" style="width:52%"></div></div>
+        <div class="pipeline-value">52%</div>
+      </div>
+
+      <div class="pipeline-row">
+        <div class="pipeline-name">Hot / Warm Leads</div>
+        <div class="pipeline-bar"><div class="pipeline-fill" style="width:38%"></div></div>
+        <div class="pipeline-value">38%</div>
+      </div>
+
+      <div class="pipeline-row">
+        <div class="pipeline-name">Payment / Loan Support</div>
+        <div class="pipeline-bar"><div class="pipeline-fill" style="width:24%"></div></div>
+        <div class="pipeline-value">24%</div>
+      </div>
+
+      <div class="pipeline-row">
+        <div class="pipeline-name">Admission Closure</div>
+        <div class="pipeline-bar"><div class="pipeline-fill" style="width:15%"></div></div>
+        <div class="pipeline-value">15%</div>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <strong class="gold">Confidentiality Note:</strong>
+      This is an anonymized sample dashboard created only to demonstrate sales process understanding.
+      It does not disclose Jaro Education’s actual revenue, lead volume, admission count, CRM data, target values,
+      student information, or branch performance.
+    </div>
+  </div>
+</section>
+
+<!-- ================================ SKILLS SECTION ================================= --> <section class="section" id="skills"> <div class="container reveal"> <div class="eyebrow">Skills</div> <h2 class="section-title">Sales leadership skills grouped for recruiter clarity.</h2> <p class="section-lead"> Skills are organized around sales execution, CRM operations, team leadership, counselling, and communication responsibilities. </p>
+  <div class="skills-grid">
+    <article class="skill-box">
+      <h3>Sales & Revenue</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Business Development</span>
+        <span class="skill-tag">Inside Sales</span>
+        <span class="skill-tag">Revenue Generation</span>
+        <span class="skill-tag">Lead Generation</span>
+        <span class="skill-tag">Lead Qualification</span>
+        <span class="skill-tag">Lead Nurturing</span>
+        <span class="skill-tag">Sales Target Management</span>
+      </div>
+    </article>
+
+    <article class="skill-box">
+      <h3>CRM & Sales Operations</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">LeadSquared CRM</span>
+        <span class="skill-tag">CRM Discipline</span>
+        <span class="skill-tag">Pipeline Management</span>
+        <span class="skill-tag">Follow-up Tracking</span>
+        <span class="skill-tag">Sales Operations</span>
+        <span class="skill-tag">Sales Processes</span>
+      </div>
+    </article>
+
+    <article class="skill-box">
+      <h3>Leadership</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Team Leadership</span>
+        <span class="skill-tag">Coaching</span>
+        <span class="skill-tag">Team Coordination</span>
+        <span class="skill-tag">Performance Support</span>
+        <span class="skill-tag">Branch Sales Execution</span>
+        <span class="skill-tag">Management</span>
+      </div>
+    </article>
+
+    <article class="skill-box">
+      <h3>Counselling & Communication</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Admissions Counselling</span>
+        <span class="skill-tag">Student Counselling</span>
+        <span class="skill-tag">Parent Counselling</span>
+        <span class="skill-tag">Objection Handling</span>
+        <span class="skill-tag">Negotiation</span>
+        <span class="skill-tag">Client Communication</span>
+        <span class="skill-tag">Relationship Building</span>
+      </div>
+    </article>
+  </div>
+</div>
+</section> <!-- ================================ RECOGNITION & DEVELOPMENT ================================= --> <section class="section" id="recognition"> <div class="container reveal"> <div class="eyebrow">Recognition & Development</div> <h2 class="section-title">Recognition, leadership exposure, and continuous professional development.</h2> <p class="section-lead"> Recognition and development milestones that support Abdul’s sales leadership positioning. </p>
+  <div class="recognition-grid">
+    <article class="recognition-panel">
+      <h3>Recognition Highlights</h3>
+      <ul class="recognition-list">
+        <li><span class="check">✓</span><span>Shark of the Month Award / Performer of the Month recognitions</span></li>
+        <li><span class="check">✓</span><span>Rewards & Recognition Mumbai – 3 Times</span></li>
+        <li><span class="check">✓</span><span>Management Development Programmes – 2 Times</span></li>
+        <li><span class="check">✓</span><span>IIM Kozhikode learning exposure</span></li>
+        <li><span class="check">✓</span><span>Sales, Leadership, Growth, and Execution Excellence</span></li>
+      </ul>
+    </article>
+
+    <article class="cert-panel" id="certifications">
+      <h3>Certifications</h3>
+
+      <div class="cert-list">
+        <article class="cert-card">
+          <h3>Management Development Programme – Sales, Leadership & Growth</h3>
+          <div class="cert-meta">Issuer: Indian Institute of Management Kozhikode | Date: December 2024</div>
+          <p>
+            Participated in a managerial excellence programme focused on sales, leadership, and growth,
+            conducted for Jaro Institute of Technology Management & Research Ltd.
+          </p>
+        </article>
+
+        <article class="cert-card">
+          <h3>Management Development Program – High Impact Leadership & Execution Excellence</h3>
+          <div class="cert-meta">Issuer: Jaro Education | Date: May 2026</div>
+          <p>
+            Participated in a Management Development Program focused on High Impact Leadership &
+            Execution Excellence, delivered in collaboration with faculty of IIM Kozhikode.
+          </p>
+        </article>
+      </div>
+    </article>
+  </div>
+</div>
+</section> <!-- ================================ CONTACT SECTION ================================= --> <section class="section" id="contact"> <div class="container reveal"> <div class="eyebrow">Contact</div> <h2 class="section-title">Open to relevant sales leadership and revenue operations opportunities.</h2> <p class="section-lead"> For recruiter conversations, sales leadership opportunities, or admissions and revenue operations roles, use the contact placeholders below. </p>
+  <div class="contact-card">
+    <div class="contact-item">
+      <div class="contact-label">Email</div>
+      <div class="contact-value"><a href="mailto:abdulghanitrup@gmail.com">abdulghanitrup@gmail.com</a></div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-label">Phone</div>
+      <div class="contact-value"><a href="tel:+919080870392">+91 9080870392</a></div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-label">LinkedIn URL</div>
+      <div class="contact-value"><a href="https://www.linkedin.com/in/abdul-ghani-t-1327a422a" target="_blank" rel="noopener">www.linkedin.com/in/abdul-ghani-t-1327a422a</a></div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-label">Location</div>
+      <div class="contact-value">Kochi, Kerala, India</div>
+    </div>
+  </div>
+</div>
+</section> 
+<!-- ================================ PORTFOLIO USAGE NOTE ================================= -->
+<section class="section-small">
+  <div class="container reveal">
+    <div class="recognition-panel">
+      <h3>Portfolio Note</h3>
+      <p style="color: var(--muted); margin-top: 12px;">
+        This portfolio is designed to support recruiter conversations for sales, admissions leadership,
+        business development, inside sales, team leadership, and CRM-based revenue operations roles.
+        It can be shared with recruiters as a professional summary of Abdul Ghani T’s sales journey,
+        case-study thinking, recognition, and leadership development.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================ FOOTER ================================= --> <footer class="footer"> <div class="container"> Abdul Ghani T — Sales & Admissions Leadership Portfolio | Sales Growth • Team Leadership • CRM-Driven Revenue Operations </div> </footer> </body> </html>
